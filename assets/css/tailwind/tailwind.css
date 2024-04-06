@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        background: #588157;
+    }
+}
+
+@layer components {
+    .default-animation {
+        transition: ease-in .3s;
+    }
+}
+
+@layer utilities {
+    .text-color-green-custom-100 {
+        color: #3a5a40;
+    }
+    .bg-green-custom-100 {
+        background: #3a5a40;
+    }
+    .text-color-green-custom-150 {
+        color: #588157;
+    }
+    .bg-green-custom-150 {
+        background: #588157;
+    }
+    .text-color-green-custom-200 {
+        color: #a3b18a;
+    }
+    .bg-green-custom-200 {
+        background: #a3b18a;
+    }
+    .text-color-beige-custom-100 {
+        color: #dad7cd;
+    }
+    .bg-beige-custom-100 {
+        background: #dad7cd;
+    }
+    .text-color-beige-custom-150 {
+        color: #edede9;
+    }
+    .bg-beige-custom-150 {
+        background: #edede9;
+    }
+    .font-custom-roboto-mono {
+        font-family: "Roboto Mono", monospace;
+    }
+    .font-custom-poppins {
+        font-family: "Poppins", sans-serif;
+    }
+}

@@ -1,4 +1,5 @@
 <template>
+  <header-component/>
   <div>
     <slot/>
   </div>

@@ -45,6 +45,12 @@
     .bg-beige-custom-150 {
         background: #edede9;
     }
+    .text-color-beige-custom-200 {
+        color: #f4f3ee;
+    }
+    .bg-beige-custom-200 {
+        background: #f4f3ee;
+    }
     .font-custom-roboto-mono {
         font-family: "Roboto Mono", monospace;
     }

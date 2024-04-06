@@ -1,0 +1,40 @@
+[
+  {
+    "name": "LuckyDiamond",
+    "description": "The only online casino on the SPm server, presents 5 game modes on its website, works honestly.",
+    "price": {
+      "start": 92.5,
+      "end": 92.9
+    },
+    "pricehistory": [116.3, 112.4, 112.2, 105.7, 100.2, 101.5, 102, 95.6, 92.5],
+    "news": {
+      "24.03.2024": {
+        "title": "LuckyDiamond Casino wins court case",
+        "description": "The judge of the special court considered the appeal of case 3552, but it never opened. Conditions were put forward for the casino to fully open."
+      },
+      "21.03.2024": {
+        "title": "LuckyDiamond Casino lost the court case.",
+        "description": "The SPm court ordered the heads of the LuckyDiamond casino to freeze their casino due to dishonesty of work and because of the crooked document \"User Agreement\" and pay a fine of 1,728 AR."
+      }
+    }
+  },
+  {
+    "name": "LuckyDiamond",
+    "description": "The only online casino on the SPm server, presents 5 game modes on its website, works honestly.",
+    "price": {
+      "start": 92.5,
+      "end": 92.9
+    },
+    "pricehistory": [116.3, 112.4, 112.2, 105.7, 100.2, 101.5, 102, 95.6, 92.5],
+    "news": {
+      "24.03.2024": {
+        "title": "LuckyDiamond Casino wins court case",
+        "description": "The judge of the special court considered the appeal of case 3552, but it never opened. Conditions were put forward for the casino to fully open."
+      },
+      "21.03.2024": {
+        "title": "LuckyDiamond Casino lost the court case.",
+        "description": "The SPm court ordered the heads of the LuckyDiamond casino to freeze their casino due to dishonesty of work and because of the crooked document \"User Agreement\" and pay a fine of 1,728 AR."
+      }
+    }
+  }
+]

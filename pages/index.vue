@@ -8,6 +8,9 @@
         Наш сервис предоставляет информацию о котировках каждой СПм компании и никак не предоставляет это как рекомендацию.
       </p>
     </div>
+    <div class="main--securites__content flex justify-center">
+      <PopularSecurites/>
+    </div>
   </main>
 </template>
 

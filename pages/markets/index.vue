@@ -1,8 +1,5 @@
 <template>
-  <HeaderComponent/>
-  <div>
-    <slot/>
-  </div>
+  <h1>123</h1>
 </template>
 
 <script setup>

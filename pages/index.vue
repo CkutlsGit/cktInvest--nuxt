@@ -9,7 +9,7 @@
       </p>
     </div>
     <div class="main--securites__content flex justify-center">
-      <PopularSecurites/>
+      <PopularSecuritesComponent/>
     </div>
   </main>
 </template>

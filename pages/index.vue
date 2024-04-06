@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>123</h1>
+    <h1 class="flex justify-center">123</h1>
   </div>
 </template>
 

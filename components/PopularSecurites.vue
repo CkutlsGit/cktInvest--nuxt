@@ -1,11 +1,11 @@
 <template>
-  <div class="securites-block">
-    <div class="securites-block__content bg-gray-500 container w-screen">
-      <div class="element">
-        <ul class="element__content">
-          <li v-for="(info, index) in popularSecurites" :key="index">
+  <div class="securites-block mt-6">
+    <div class="securites-block__content bg-gray-500 rounded-2xl w-96 p-6">
+      <div class="element text-white text-xl">
+        <ul class="element__content max-w-full mx-auto flex flex-col">
+          <li class="flex justify-between" v-for="info in popularSecurites" :key="info.id">
             <h1>{{ info.name }}</h1>
-            <h1>{{ info.price.start }}</h1>
+            <h1>{{ info.price.start }} АР</h1>
             <h1 :class="getPriceColor(info.pricehistory[0], info.price.start)">{{ getPrecentSecurites(info.pricehistory[0], info.price.start) }}%</h1>
           </li>
         </ul>
@@ -26,15 +26,21 @@
   function getPrecentSecurites(endPrice, startPrice) {
     const differencePrice = startPrice - endPrice
     const precentPrice = differencePrice / endPrice * 100
-    console.log(endPrice, startPrice, differencePrice, precentPrice)
 
     return precentPrice.toFixed(2)
   }
 
   function getPriceColor(endPrice, startPrice) {
-    const deffirencePrice = startPrice - endPrice
+    const diffirencePrice = startPrice - endPrice
 
-    return deffirencePrice >= 0 ? 'text-green-500' : 'text-red-500'
+    switch (Math.sign(diffirencePrice)) {
+      case 1:
+        return 'text-green-500'
+      case -1:
+        return 'text-red-500'
+      default:
+        return 'text-gray-500'
+    }
   }
 
 </script>

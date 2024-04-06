@@ -1,5 +1,7 @@
 [
+
   {
+    "id": 0,
     "name": "LuckyDiamond",
     "description": "The only online casino on the SPm server, presents 5 game modes on its website, works honestly.",
     "price": {
@@ -18,23 +20,50 @@
       }
     }
   },
+
   {
-    "name": "LuckyDiamond",
-    "description": "The only online casino on the SPm server, presents 5 game modes on its website, works honestly.",
+    "id": 1,
+    "name": "FreshMarket",
+    "description": "The only market place on the SPm server that uses a website, not a discord of bots.",
     "price": {
-      "start": 92.5,
-      "end": 92.9
+      "start": 63.3,
+      "end": 63.6
     },
-    "pricehistory": [116.3, 112.4, 112.2, 105.7, 100.2, 101.5, 102, 95.6, 92.5],
+    "pricehistory": [90.5, 95.2, 95.5, 97.9, 99.5, 93.2, 89.4, 75.5, 63.5],
     "news": {
-      "24.03.2024": {
-        "title": "LuckyDiamond Casino wins court case",
-        "description": "The judge of the special court considered the appeal of case 3552, but it never opened. Conditions were put forward for the casino to fully open."
+      "18.03.2024": {
+        "title": "The creator of the Freshmarket, zarlax, was blocked on the SPm server.",
+        "description": "The creator was blocked without trial, but with the help of the administration for distributing third-party resources. The fate of the marketplace is unknown."
       },
-      "21.03.2024": {
-        "title": "LuckyDiamond Casino lost the court case.",
-        "description": "The SPm court ordered the heads of the LuckyDiamond casino to freeze their casino due to dishonesty of work and because of the crooked document \"User Agreement\" and pay a fine of 1,728 AR."
+      "31.08.2023": {
+        "title": "Opening of the first online marketplace on SPm.",
+        "description": "The announcement of the only marketplace was presented."
       }
     }
+  },
+
+  {
+    "id": 2,
+    "name": "CHVK CMEX",
+    "description": "Organization of various events",
+    "price": {
+      "start": 12.3,
+      "end": 12.7
+    },
+    "pricehistory": [9.5, 9.7, 9.9, 9.9, 9.7, 11.4, 12, 12.4, 12.3],
+    "news": {}
+  },
+
+  {
+    "id": 3,
+    "name": "SPm - gobnik",
+    "description": "Organization for the creation of various services",
+    "price": {
+      "start": 5.5,
+      "end": 5.7
+    },
+    "pricehistory": [12.5, 12.4, 16.5, 17.8, 14.5, 6.5, 4.5, 5, 5.6],
+    "news": {}
   }
+
 ]

@@ -1,9 +1,9 @@
 <template>
   <div class="securites-block mt-6">
-    <div class="securites-block__content bg-gray-500 rounded-2xl w-96 p-6">
+    <div class="securites-block__content bg-gray-500 rounded-2xl w-96 p-6 max-sm:w-40">
       <div class="element text-white text-xl">
         <ul class="element__content max-w-full mx-auto flex flex-col">
-          <li class="flex justify-between" v-for="info in popularSecurites" :key="info.id">
+          <li class="flex justify-between max-sm:flex-col max-sm:text-center max-sm:mt-4" v-for="info in popularSecurites" :key="info.id">
             <h1>{{ info.name }}</h1>
             <h1>{{ info.price.start }} АР</h1>
             <h1 :class="getPriceColor(info.pricehistory[0], info.price.start)">{{ getPrecentSecurites(info.pricehistory[0], info.price.start) }}%</h1>

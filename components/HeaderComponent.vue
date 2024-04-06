@@ -10,7 +10,7 @@
       </div>
       <div class="header__btn">
         <NuxtLink to="/markets" class="text-2xl text-color-beige-custom-150 font-medium font-custom-poppins cursor-pointer hover:text-gray-300 default-animation">
-          Markets
+          Котировки
         </NuxtLink>
       </div>
     </div>

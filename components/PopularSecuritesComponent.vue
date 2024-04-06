@@ -1,7 +1,7 @@
 <template>
   <div class="securites-block mt-6">
     <div class="securites-block__content bg-gray-500 rounded-2xl w-96 p-6 max-sm:w-40">
-      <div v-if="!statusClaimData" class="relative left-36">
+      <div v-if="!statusClaimData" class="relative left-36 max-sm:left-8">
         <LoaderComponent/>
       </div>
       <div v-else class="element text-white text-xl">
@@ -10,7 +10,7 @@
             <NuxtLink to="/markets" class="flex justify-between cursor-pointer max-sm:flex-col max-sm:text-center max-sm:mt-4">
               <h1>{{ info.name }}</h1>
               <h1>{{ info.price.start }} АР</h1>
-              <h1 :class="getPriceColor(info.pricehistory[0], info.price.start)">{{ getPrecentSecurites(info.pricehistory[0], info.price.start) }}%</h1>
+              <h1 :class="GetColor(info.pricehistory[0], info.price.start)">{{ GetPrecent(info.pricehistory[0], info.price.start) }}%</h1>
             </NuxtLink>
           </li>
         </ul>
@@ -20,6 +20,9 @@
 </template>
 
 <script setup>
+  import GetColor from "~/utils/getColor.js";
+  import GetPrecent from "/utils/getPrecent.js";
+
   let popularSecurites = reactive({})
   const statusClaimData = ref(false)
 
@@ -32,26 +35,6 @@
 
     Object.assign(popularSecurites, data)
   })
-
-  function getPrecentSecurites(endPrice, startPrice) {
-    const differencePrice = startPrice - endPrice
-    const precentPrice = differencePrice / endPrice * 100
-
-    return precentPrice.toFixed(2)
-  }
-
-  function getPriceColor(endPrice, startPrice) {
-    const diffirencePrice = startPrice - endPrice
-
-    switch (Math.sign(diffirencePrice)) {
-      case 1:
-        return 'text-green-500'
-      case -1:
-        return 'text-red-500'
-      default:
-        return 'text-gray-500'
-    }
-  }
 
 </script>
 

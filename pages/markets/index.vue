@@ -7,7 +7,7 @@
       <div class="element text-white text-xl" v-else>
         <ul class="element__content">
           <li class="pt-0.5" v-for="active in securitesList" :key="active.id">
-            <NuxtLink :to="`markets/${ active.id }`" class="flex justify-around mt-4 cursor-pointer">
+            <NuxtLink :to="`markets/${ active.name }`" class="flex justify-around mt-4 cursor-pointer">
               <h1>{{ active.name }}</h1>
               <h1>{{ active.price.start }} | {{ active.price.end }}</h1>
               <h1 :class="GetColor(active.pricehistory[0], active.price.start)">{{ GetPrecent(active.pricehistory[0], active.price.start) }}%</h1>

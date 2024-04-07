@@ -1,6 +1,6 @@
 <template>
   <div class="active-info mt-16">
-    <div class="active-info__content bg-gray-500 text-white font-medium font-custom-poppins rounded-2xl container mx-auto min-h-96 p-6">
+    <div class="active-info__content bg-gray-500 text-white font-medium font-custom-poppins rounded-2xl container mx-auto min-h-96 max-h-96 overflow-y-auto p-6">
       <div v-if="!statusClaimData">
         <LoaderComponent/>
       </div>
@@ -11,7 +11,7 @@
           <h2>{{ activeInfo.price.start }} | {{ activeInfo.price.end }} АР</h2>
           <h2 class="ml-2" :class="GetColor(activeInfo.pricehistory[0], activeInfo.price.start)">{{ GetPrecent(activeInfo.pricehistory[0], activeInfo.price.start) }}%</h2>
         </div>
-        <div class="news-block mt-6">
+        <div v-if="Object.keys(activeInfo.news).length !== 0" class="news-block mt-6">
           <h1>Новости компании</h1>
           <ul class="max-h-56 overflow-y-auto">
             <li class="mt-6" v-for="(news, index) in activeInfo.news" :key="index">
@@ -22,7 +22,7 @@
           </ul>
         </div>
       </div>
-      <div class="price-history-block">
+      <div class="price-history-block mt-6">
         <h2></h2>
         <ChartComponent/>
       </div>

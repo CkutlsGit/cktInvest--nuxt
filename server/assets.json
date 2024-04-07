@@ -1,9 +1,8 @@
 [
-
   {
     "id": 0,
     "name": "LuckyDiamond",
-    "description": "The only online casino on the SPm server, presents 5 game modes on its website, works honestly.",
+    "description": "Единственное онлайн-казино на сервере SPm, представляет 5 игровых режимов на своем веб-сайте, работает честно.",
     "price": {
       "start": 92.5,
       "end": 92.9
@@ -11,12 +10,12 @@
     "pricehistory": [116.3, 112.4, 112.2, 105.7, 100.2, 101.5, 102, 95.6, 92.5],
     "news": {
       "24.03.2024": {
-        "title": "LuckyDiamond Casino wins court case",
-        "description": "The judge of the special court considered the appeal of case 3552, but it never opened. Conditions were put forward for the casino to fully open."
+        "title": "Казино LuckyDiamond выиграло судебное дело",
+        "description": "Судья специального суда рассмотрел апелляцию по делу 3552, но оно так и не было открыто. Были предъявлены условия для полного открытия казино."
       },
       "21.03.2024": {
-        "title": "LuckyDiamond Casino lost the court case.",
-        "description": "The SPm court ordered the heads of the LuckyDiamond casino to freeze their casino due to dishonesty of work and because of the crooked document \"User Agreement\" and pay a fine of 1,728 AR."
+        "title": "Казино LuckyDiamond проиграло судебное дело",
+        "description": "Суд SPm приказал руководителям казино LuckyDiamond заморозить свое казино из-за нечестной работы и из-за кривоватого документа 'User Agreement' и заплатить штраф в размере 1 728 AR."
       }
     }
   },
@@ -24,7 +23,7 @@
   {
     "id": 1,
     "name": "FreshMarket",
-    "description": "The only market place on the SPm server that uses a website, not a discord of bots.",
+    "description": "Единственный рынок на сервере SPm, использующий веб-сайт, а не дискорд ботов.",
     "price": {
       "start": 63.3,
       "end": 63.6
@@ -32,12 +31,12 @@
     "pricehistory": [90.5, 95.2, 95.5, 97.9, 99.5, 93.2, 89.4, 75.5, 63.5],
     "news": {
       "18.03.2024": {
-        "title": "The creator of the Freshmarket, zarlax, was blocked on the SPm server.",
-        "description": "The creator was blocked without trial, but with the help of the administration for distributing third-party resources. The fate of the marketplace is unknown."
+        "title": "Создатель FreshMarket, zarlax, был заблокирован на сервере SPm",
+        "description": "Создатель был заблокирован без суда, но с помощью администрации за распространение сторонних ресурсов. Судьба площадки неизвестна."
       },
       "31.08.2023": {
-        "title": "Opening of the first online marketplace on SPm.",
-        "description": "The announcement of the only marketplace was presented."
+        "title": "Открытие первого онлайн-рынка на сервере SPm",
+        "description": "Было представлено объявление о единственном рынке."
       }
     }
   },
@@ -45,7 +44,7 @@
   {
     "id": 2,
     "name": "CHVK CMEX",
-    "description": "Organization of various events",
+    "description": "Организация различных мероприятий",
     "price": {
       "start": 12.3,
       "end": 12.7
@@ -57,7 +56,7 @@
   {
     "id": 3,
     "name": "SPm - gobnik",
-    "description": "Organization for the creation of various services",
+    "description": "Организация для создания различных сервисов",
     "price": {
       "start": 5.5,
       "end": 5.7
@@ -65,5 +64,4 @@
     "pricehistory": [12.5, 12.4, 16.5, 17.8, 14.5, 6.5, 4.5, 5, 5.6],
     "news": {}
   }
-
 ]

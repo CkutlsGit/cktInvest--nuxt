@@ -13,7 +13,7 @@ export default {
 
   components: { LineChart },
   setup(props) {
-    const data = reactive([120, 100, 40, 0, 80, 160, 120])
+    const data = reactive([])
     const options = reactive({
       plugins: {
         legend: {
@@ -21,9 +21,21 @@ export default {
         }
       }
     })
+    const labels = reactive([])
+
+    const { $bus } = useNuxtApp()
+
+    onMounted(() => {
+      $bus.on('sendPriceHistory', (priceHistory) => {
+        for (let i = 0; i < priceHistory.length; i++) {
+          labels.push('')
+          data.push(priceHistory[i])
+        }
+      })
+    })
 
     const chartData = computed(() => ({
-      labels: [],
+      labels: labels,
       datasets: [{
         data: data,
         backgroundColor: '#8021F9',

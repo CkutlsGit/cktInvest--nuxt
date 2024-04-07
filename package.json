@@ -13,6 +13,7 @@
     "autoprefixer": "^10.4.19",
     "chart.js": "^3.9.1",
     "nuxt": "^3.11.2",
+    "nuxt-bus": "^0.9.3",
     "vue": "^3.4.21",
     "vue-chart-3": "^3.1.8",
     "vue-router": "^4.3.0"

@@ -8,7 +8,7 @@
         <h1>{{ activeInfo.name }}</h1>
         <p>{{ activeInfo.description }}</p>
         <div class="info-count-precent mt-2 flex items-center">
-          <h2>{{ activeInfo.price.start }} | {{ activeInfo.price.end }}</h2>
+          <h2>{{ activeInfo.price.start }} | {{ activeInfo.price.end }} АР</h2>
           <h2 class="ml-2" :class="GetColor(activeInfo.pricehistory[0], activeInfo.price.start)">{{ GetPrecent(activeInfo.pricehistory[0], activeInfo.price.start) }}%</h2>
         </div>
         <div class="news-block mt-6">
@@ -22,9 +22,12 @@
           </ul>
         </div>
       </div>
+      <div class="price-history-block">
+        <h2></h2>
+        <ChartComponent/>
+      </div>
     </div>
   </div>
-  <ChartComponent/>
 </template>
 
 <!--<h1 :class="GetColor(active.pricehistory[0], active.price.start)">{{ GetPrecent(active.pricehistory[0], active.price.start) }}%</h1>-->
@@ -36,6 +39,7 @@
   let activeInfo = reactive({})
   const statusClaimData = ref(false)
   const route = useRoute()
+  const { $bus } = useNuxtApp()
 
   onMounted(async () => {
     const data = await $fetch(`/api/securites/validate/checkvalidate`, {
@@ -45,13 +49,12 @@
       }
     })
 
-    console.log(data)
-
     if (data) {
       statusClaimData.value = true
 
       Object.assign(activeInfo, data)
-      console.log(true)
+
+      $bus.emit('sendPriceHistory', activeInfo.pricehistory)
     }
     else {
       statusClaimData.value = true

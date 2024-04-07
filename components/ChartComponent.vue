@@ -38,8 +38,8 @@ export default {
       labels: labels,
       datasets: [{
         data: data,
-        backgroundColor: '#8021F9',
-        borderColor: '#9560EB'
+        backgroundColor: '#28bb19',
+        borderColor: '#165707'
       }],
     }))
 
